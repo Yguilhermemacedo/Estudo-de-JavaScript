@@ -1,21 +1,33 @@
-const veiculos = [];
-
 class Veiculo {
-    constructor(marca, modelo, ano, tipo){
-        this.marca = marca,
-        this.modelo = modelo,
-        this.ano = ano,
-        this.tipo = tipo
+    constructor(marca, modelo, ano, cor, placa) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+        this.placa = placa;
     }
-
-    mostrarDetalhes(){
-        console.log(`Descrição do veículo:\n Tipo:${this.tipo}\n Modelo:${this.modelo}\n Marca:${this.marca}\n Ano:${this.ano}`)
+    mostrarDados(){
+        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}, Cor: ${this.cor}, Placa: ${this.placa}`);
     }
 }
 
-const civic = new Veiculo("Honda", "Civic LX 1.7", "2003", "Automóvel")
-veiculos.push(civic);
-civic.mostrarDetalhes();
-console.log(`Veículos na garagem: `, JSON.stringify(veiculos, null, 2))
+const button = document.querySelector('button').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const modelo = document.querySelector('#modelo').value;
+    const marca = document.querySelector('#marca').value;   
+    const ano = document.querySelector('#ano').value;
+    const cor = document.querySelector('#cor').value;
+    const placa = document.querySelector('#placa').value;
+
+    const carro = new Veiculo(marca, modelo, ano, cor, placa);
+    carro.mostrarDados();
+
+    localStorage.setItem('veiculo', JSON.stringify(carro));
+    const listaVeiculos = document.querySelector('.lista');
+    const item = document.createElement('li');
+    item.textContent = localStorage.getItem('carro');
+});
+
 
 

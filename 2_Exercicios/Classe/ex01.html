@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+        }
+
+        .lista{
+            height: auto;
+            width: 500px;
+            padding: 10px;
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+        form{
+            height: auto;
+            width: 500px;
+            padding: 10px;
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="modelo">Modelo do veículo</label>
+        <input type="text" name="modelo" id="modelo">
+        <label for="marca">Marca do veículo</label>
+        <input type="text" name="marca" id="marca">
+        <label for="ano">Ano do veículo</label>
+        <input type="number" name="ano" id="ano">
+        <label for="cor">Cor do veículo</label>
+        <input type="text" name="cor" id="cor">
+        <label for="placa">Placa do veículo</label>
+        <input type="text" name="placa" id="placa">
+        <button type="button" >Cadastrar veículo</button>
+    </form>
+    <div >
+        <h2>Lista de veículos</h2>
+        <ul class="lista">
+        </ul>
+    </div>
+    <script src="ex01.js"></script>
+</body>
+</html>
