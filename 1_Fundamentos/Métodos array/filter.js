@@ -12,3 +12,10 @@ const pessoaNaoTrabalhando = pessoas.filter((pessoa) =>{
 });
 console.log(pessoaNaoTrabalhando);
 
+const pessoasMaioresDeIdade = pessoas.filter((pessoa) =>{
+    return pessoa.idade >= 18;
+
+});
+
+console.log(`Pessoas maiores de idade são:\n ${pessoasMaioresDeIdade.map((pessoa) => pessoa.nome)}`);
+

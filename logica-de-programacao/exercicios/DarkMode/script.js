@@ -1,7 +1,7 @@
-const button = document.querySelector("button");
 
+const body = document.querySelector("body");
 function mudarTema() {
-    document.body.classList.toggle("dark-mode"); // Removi o ponto na classe
+    body.classList.toggle("dark-mode"); // Removi o ponto na classe
 
     let title = document.createElement("h1");
     title.textContent = "UAAUUUUUUUUUUU MUDOU DE COR VÉÉÉÉÉIIIIIHHH";
@@ -9,4 +9,4 @@ function mudarTema() {
     document.body.appendChild(title); 
 }
 
-button.addEventListener("click", mudarTema); 
+
