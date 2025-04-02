@@ -24,4 +24,5 @@ function buscarCep(cep){
 
 }
 
-buscarCep('04531011')
+buscarCep('08071170');
+
