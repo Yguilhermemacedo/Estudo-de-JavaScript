@@ -1,5 +1,5 @@
 // Curso de JavaScript -- Aula 01 "Fundamentos"
-let numero = 1000;
+let numero = 569;
 
 const resultado = numero - 1
 

@@ -4,7 +4,7 @@ const dataEspecifica = new Date(2023, 9, 15, 10, 30, 0); // 15 de Outubro de 202
 console.log("Data específica:", dataEspecifica);
 
 // Convertendo uma string para um objeto Date
-const dataString = new Date("2023-10-15T10:30:00");
+const dataString = new Date("2025-10-15T10:30:00");
 console.log("Data a partir de string:", dataString);
 
 // Obtendo partes da data
